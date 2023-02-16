@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
             }
-            orient = true
+            orient = !orient
         }
 
         bBTN3?.setOnClickListener {
@@ -105,6 +105,7 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         Log.d("testMsg", "onPause")
         Toast.makeText(this@MainActivity, "You are into onPause function", Toast.LENGTH_LONG).show()
+        onResume()
     }
 
     override fun onStop() {
