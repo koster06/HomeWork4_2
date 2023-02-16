@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HomeWork4_2</string>
+    <string name="button_name">Change orientation</string>
+    <string name="button3_name">onPause</string>
+    <string name="button4_name">onStop</string>
 </resources>
